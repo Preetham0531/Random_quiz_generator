@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate MCQs</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 15;
+            font-style: normal;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; 
+            color: #e0e0e0;
+        }
+        .container {
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+            background-color: #1e1e1e;
+        }
+        .side-text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #66ff66;
+        }
+        .left-side-text {
+            left: 20px;
+        }
+        .right-side-text {
+            right: 20px;
+        }
+        label, p.lead {
+            color: #b3b3b3;
+        }
+        h1 {
+            color: #66ff66; 
+        }
+        .form-control, .form-control-file {
+            background-color: #2c2c2c; 
+            color: #e0e0e0; 
+            border: 1px solid #66ff66;
+            width: 300px;
+        }
+        .form-control:focus, .form-control-file:focus {
+            box-shadow: 0 0 5px #66ff66;
+            border-color: #66ff66;
+        }
+        .btn-primary {
+            background-color: #66ff66;
+            border-color: #66ff66;
+            color: #1e1e1e; 
+        }
+        .btn-primary:hover {
+            background-color: #55e055; 
+            border-color: #55e055;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Quiz Generator</h1>
+        <p class="lead">This application generates a quiz in the form of multiple choice questions.</p>
+        <p class="lead">1. Chose a particular PDF or TXT file and upload it.</p>
+        <p class="lead">2. Select the number of questions. </p>
+        <p class="lead">3. Click on "Generate" </p>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group" style="margin-top:50px;">
+                <label for="file">Upload File(s) (PDF or TXT)</label>
+                <input type="file" class="form-control-file" id="file" name="files[]" multiple style="margin-left:41%">
+            </div>
+            <div class="form-group">
+                <label for="num_questions">Upper Limit for Questions:</label>
+                <select style="margin-left:45%; background-color: #2c2c2c; color: #e0e0e0; width:10%" class="form-control" id="num_questions" name="num_questions">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate!</button>
+        </form>
+    </div>
+</body>
+</html>
