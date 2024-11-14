@@ -21,7 +21,7 @@ Follow these steps to clone the repository, create a virtual environment, instal
 1. Open a terminal.
 2. Run the following command to clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/QuizGeneratorApp.git
+git clone https://github.com/Preetham0531/QuizGeneratorApp.git
 ```
 Navigate to the project folder:
 ```bash
