@@ -1,70 +1,54 @@
-# Quiz Generator
+# Quiz Generator Application
 
-## Introduction
+This repository contains a simple quiz generator application built using Python, with HTML templates for the web interface.
 
-Our project focuses on creating multiple-choice questions (MCQs) through machine learning and natural language processing (NLP) techniques. MCQs are commonly used in educational assessments to gauge students' grasp of specific subjects. Automating the MCQ generation process can help educators save time and effort, all while maintaining the quality and relevance of the questions.
+## Project Structure
+- `app.py`: The main application script.
+- `QuizGenerator.ipynb`: A notebook for quiz generation logic.
+- `requirements.txt`: Python dependencies for the project.
+- `Test1 - NLP.txt` and `Test2 - Universe.txt`: Sample quiz files.
+- `templates/`: Folder containing HTML templates (`index.html` and `results.html`).
 
-## Project Set Up
+## Prerequisites
+- Python 3.8 or higher
+- [Git](https://git-scm.com/) for cloning the repository
 
-### Step 1: Clone the repository
+## Installation and Setup
 
-Clone this project using the following command:
+Follow these steps to clone the repository, create a virtual environment, install dependencies, and run the application:
 
+### Step 1: Clone the Repository
+1. Open a terminal.
+2. Run the following command to clone the repository:
 ```bash
-git clone https://github.com/nitinsomu/QuizGeneratorNLP
+git clone https://github.com/YOUR_USERNAME/QuizGeneratorApp.git
 ```
-
-### Step 2:
-
-Install python from https://www.python.org/downloads/
-
-### Step 3:
-Enter the folder and install the requirements by running the following command.
+Navigate to the project folder:
+```bash
+cd QuizGeneratorApp
+```
+### Step 2: Create a Virtual Environment
+Create a virtual environment:
 
 ```bash
-cd QuizGeneratorNLP
+python3 -m venv venv
+```
+Activate the virtual environment:
+
+macOS/Linux:
+```bash
+source venv/bin/activate
+```
+### Step 3: Install Dependencies
+Once the virtual environment is activated, install the required dependencies with:
+
+```bash
 pip install -r requirements.txt
 ```
-
-### Step 4: 
-
-Download the language model en_core_web_sm
-
-```bash
-python -m spacy download en_core_web_sm
-```
-
-### Step 5:
-
-Run the app:
+### Step 4: Run the Application
+Run the application using:
 
 ```bash
 python app.py
 ```
-
-### Step 6: 
-
-Head over to http://localhost:5000/ to access the app
-
-## To run the QuizGenerator.ipynb file, follow these steps:
-
-### Step 1: Set Up Jupyter Notebook Environment
-Install Jupyter Notebook: If you haven't already installed it, open a terminal and use the following command:
-```bash
-pip install jupyter
-```
-
-### Step 2: Launch Jupyter Notebook
-Open Terminal: Navigate to the directory where the .ipynb file is located.
-Start Jupyter Notebook:
-```bash
-jupyter notebook
-```
-This command will open Jupyter Notebook in your default web browser, showing a list of your files.
-
-### Step 3: Open and Run the Notebook
-Select the Notebook: Find and click on your .pynb file to open it.
-Run the Code Cells:
-Click on each code cell and press Shift + Enter to execute it.
-Alternatively, use the “Run” button from the toolbar to execute each cell.
-You can also select Cell > Run All from the menu to run all cells sequentially.
+Open a browser and go to http://127.0.0.1:5000 to view the app.
