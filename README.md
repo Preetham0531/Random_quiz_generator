@@ -20,39 +20,36 @@ Follow these steps to clone the repository, create a virtual environment, instal
 ### Step 1: Clone the Repository
 1. Open a terminal.
 2. Run the following command to clone the repository:
-   ```bash
+```bash
    git clone https://github.com/YOUR_USERNAME/QuizGeneratorApp.git
-
-## Navigate to the project folder:
-bash
-Copy code
-cd QuizGeneratorApp
-Step 2: Create a Virtual Environment
+```
+### Navigate to the project folder:
+```bash
+   cd QuizGeneratorApp
+```
+### Step 2: Create a Virtual Environment
 Create a virtual environment:
 
-bash
-Copy code
+```bash
 python3 -m venv venv
+```
 Activate the virtual environment:
 
-Windows:
-bash
-Copy code
-venv\Scripts\activate
-macOS/Linux:
-bash
-Copy code
+#### macOS/Linux:
+```bash
 source venv/bin/activate
-Step 3: Install Dependencies
+```
+
+### Step 3: Install Dependencies
 Once the virtual environment is activated, install the required dependencies with:
-
+```
 bash
-Copy code
 pip install -r requirements.txt
-Step 4: Run the Application
+```
+### Step 4: Run the Application
 Run the application using:
-
+```
 bash
-Copy code
 python app.py
+```
 Open a browser and go to http://127.0.0.1:5000 to view the app.
