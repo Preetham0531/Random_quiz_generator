@@ -9,30 +9,50 @@ This repository contains a simple quiz generator application built using Python,
 - `Test1 - NLP.txt` and `Test2 - Universe.txt`: Sample quiz files.
 - `templates/`: Folder containing HTML templates (`index.html` and `results.html`).
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 - Python 3.8 or higher
-- [Git](https://git-scm.com/)
+- [Git](https://git-scm.com/) for cloning the repository
 
-### Step 1: Setting up the GitHub Repository
+## Installation and Setup
 
-1. Go to [GitHub](https://github.com) and log into your account.
-2. Click on **New repository**.
-3. Name your repository (e.g., `QuizGeneratorApp`) and add an optional description.
-4. Set the repository to **Public** or **Private**, depending on your preference.
-5. Check the box to initialize the repository with a **README** (optional).
-6. Click **Create repository**.
+Follow these steps to clone the repository, create a virtual environment, install dependencies, and run the application:
 
-### Step 2: Upload Your Project Files to GitHub
-
-1. Open a terminal in your project folder.
-2. Run the following commands to initialize a Git repository locally and connect it to your GitHub repository:
-
+### Step 1: Clone the Repository
+1. Open a terminal.
+2. Run the following command to clone the repository:
    ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/QuizGeneratorApp.git
-   git push -u origin main
+   git clone https://github.com/YOUR_USERNAME/QuizGeneratorApp.git
+
+## Navigate to the project folder:
+bash
+Copy code
+cd QuizGeneratorApp
+Step 2: Create a Virtual Environment
+Create a virtual environment:
+
+bash
+Copy code
+python3 -m venv venv
+Activate the virtual environment:
+
+Windows:
+bash
+Copy code
+venv\Scripts\activate
+macOS/Linux:
+bash
+Copy code
+source venv/bin/activate
+Step 3: Install Dependencies
+Once the virtual environment is activated, install the required dependencies with:
+
+bash
+Copy code
+pip install -r requirements.txt
+Step 4: Run the Application
+Run the application using:
+
+bash
+Copy code
+python app.py
+Open a browser and go to http://127.0.0.1:5000 to view the app.
