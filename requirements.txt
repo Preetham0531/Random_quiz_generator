@@ -2,3 +2,4 @@ Flask
 Flask-Bootstrap
 spacy
 PyPDF2
+en_core_web_sm
