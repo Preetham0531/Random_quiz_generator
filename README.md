@@ -25,7 +25,7 @@ git clone https://github.com/Preetham0531/Random_quiz_generator.git
 ```
 Navigate to the project folder:
 ```bash
-cd QuizGeneratorApp
+cd Random_quiz_generator
 ```
 ### Step 2: Create a Virtual Environment
 Create a virtual environment:
